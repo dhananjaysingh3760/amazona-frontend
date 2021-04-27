@@ -15,7 +15,7 @@ function ProductScreen(props) {
 
     useEffect(() => {
         dispatch(prodDetails(productId));
-    },[])
+    },[dispatch,productId])
     const addToCardHandler = () => {
         console.log("clicking");
         props.history.push(`/cart/${productId}?qty=${qty}`)
@@ -76,8 +76,7 @@ function ProductScreen(props) {
             </div>
         </div>
     </div>}
-        </div>
-        
+    </div>    
     )
 }
 

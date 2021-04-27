@@ -5,7 +5,7 @@ import { productDetailsReducer, productListReducer } from "./reducers/productRed
 
 const initialState = {
     cart: {
-        cardItems: localStorage.getItem('cardItems') ? JSON.parse(localStorage.getItem('cardItems')): [], 
+        cartItems: [], 
     }
 };
 

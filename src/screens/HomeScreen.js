@@ -11,7 +11,7 @@ function HomeScreen() {
     const {loading,error,products} = productList;
     useEffect(() =>{
         dispatch(listProducts());
-    },[])
+    },[dispatch])
     return (
         <div> 
         { loading? (<LoadingBox />) :error ? (<MessageBox variant="danger">{error}</MessageBox>):<Product key ={products._id} products = {products}></Product>}
