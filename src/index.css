@@ -156,6 +156,9 @@ i{
   min-width: 30rem;
 }
 /* Alert */
+.loading{
+  display: block !important;
+}
 .success {
   color: #20a020;
 }
