@@ -25,7 +25,7 @@ function CartScreen(props) {
                 <h1>Shopping Cart</h1>{
                     cartItems.length ===  0 ?
                     (<MessageBox>
-                        Cart is empty<Link to="/">Go shopping</Link>
+                        Cart is empty  <Link to="/">GO SHOPPING</Link>
                     </MessageBox>)
                     :
                     <ul>
@@ -42,7 +42,7 @@ function CartScreen(props) {
                             <button onClick={() => dispatch(removeItem(cartItem.product))} className="block">Delete</button>
                         </li>
                     ))}
-                </ul>
+                    </ul>
                 }
                 
             </div>
@@ -56,4 +56,4 @@ function CartScreen(props) {
     )
 }
 
-export default CartScreen
+export default CartScreen;

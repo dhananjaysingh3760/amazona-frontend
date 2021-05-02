@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect , useState } from 'react'
 import { Link } from 'react-router-dom'
-import {useDispatch , useSelector} from 'react-redux';
+import { useDispatch , useSelector } from 'react-redux';
 import { signin } from '../actions/signinActions';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
@@ -10,7 +10,7 @@ function SigninScreen(props) {
     const [password,setPassword] = useState('');
     
     const userSignin = useSelector(state => state.userSignin);
-    const {userInfo , loading,error} = userSignin;
+    const { userInfo , loading , error } = userSignin;
     const redirect = props.location.search ? props.location.search.split('=')[1] : '/';
 
     const dispatch = useDispatch();
@@ -48,7 +48,7 @@ function SigninScreen(props) {
                 <div>
                     <lable></lable>
                     <div>
-                        Nem customer?  <Link to={`/register?redirect=${redirect}`}>Create your account</Link>
+                        Nem customer ? <Link to={`/register?redirect=${redirect}`}>Create your account</Link>
                     </div>
                 </div>
             </form>
