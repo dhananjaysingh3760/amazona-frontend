@@ -23,7 +23,6 @@ function ShippingScreen(props) {
         dispatch(saveShippingAddress({fullName ,city,address,postalCode,country}));
         props.history.push('/payment');
     }
-    
     return (
         <div>
             <CheckoutSteps step1 step2></CheckoutSteps>
